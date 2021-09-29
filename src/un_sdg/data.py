@@ -119,7 +119,7 @@ def build_spreadsheet():
     workbook = xlsxwriter.Workbook(spreadsheet_file)
     _generic = {
         'align': 'left',
-        'valign': 'top',
+        'valign': 'middle',
         'text_wrap': True,
         'font_name': 'Lato',
     }
