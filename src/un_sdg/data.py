@@ -119,7 +119,6 @@ def build_spreadsheet():
     workbook = xlsxwriter.Workbook(spreadsheet_file)
     _generic = {
         'align': 'left',
-        'valign': 'center',
         'text_wrap': True,
         'font_name': 'Lato',
     }
@@ -140,6 +139,7 @@ def build_spreadsheet():
             'border_color': '#c0c0c0',
         }
     )
+    _l3.set_align('vcenter')
 
     for l1_goal_num, l1_goal in data_index.items():
         short_name = L1_GOAL_NUM_TO_SHORT.get(l1_goal_num, '')
